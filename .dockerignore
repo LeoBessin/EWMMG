@@ -1,0 +1,31 @@
+# Git files
+.git
+.gitignore
+
+# Unity project files (not needed for running the build)
+Assets/
+Packages/
+ProjectSettings/
+UserSettings/
+Library/
+Temp/
+Logs/
+obj/
+
+# IDE files
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+
+# Documentation
+*.md
+README*
+
+# Other builds (only include LinuxServer)
+Builds/*
+!Builds/LinuxServer/
+
+# Logs
+*.log

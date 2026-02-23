@@ -1,0 +1,13 @@
+services:
+  ewmmg-server:
+    build: .
+    container_name: ewmmg-server
+    ports:
+      - "7777:7777/tcp"
+      - "7777:7777/udp"
+    restart: unless-stopped
+    environment:
+      - DISPLAY=:99
+    # Optional: Mount a volume for persistent server data/logs
+    # volumes:
+    #   - ./ServerData:/app/ServerData

@@ -24,7 +24,7 @@ jobs:
         targetPlatform: StandaloneLinux64
         buildName: EWMMGServer
         buildPath: Build
-        customParameters: -serverBuild -batchmode -nographics
+        customParameters: -serverBuild
       env:
         UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
         UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}

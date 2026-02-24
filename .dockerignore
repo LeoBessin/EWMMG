@@ -23,9 +23,9 @@ obj/
 *.md
 README*
 
-# Other builds (only include LinuxServer)
-Builds/*
-!Builds/LinuxServer/
+# Other builds (only include the StandaloneLinux64 build from GitHub Actions)
+Build/*
+!Build/StandaloneLinux64/
 
 # Logs
 *.log

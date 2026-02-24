@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy the Unity Linux server build
-# Assumes you've built the server for Linux in the Builds/LinuxServer directory
-COPY Builds/LinuxServer/ ./
+# From GitHub Actions unity-builder output: Build/StandaloneLinux64/
+COPY Build/StandaloneLinux64/ ./
 
 # Make all executables executable and create a startup script
 RUN chmod +x ./*.x86_64 2>/dev/null || true && \

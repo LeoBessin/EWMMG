@@ -18,6 +18,11 @@ jobs:
         path: Library
         key: Library-${{ hashFiles('**/*.cs') }}
 
+    - name: Setup Unity
+      uses: game-ci/unity-setup@v4
+      with:
+        unity-version: auto
+
     - name: Build Unity Server
       uses: game-ci/unity-builder@v4
       with:
